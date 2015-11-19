@@ -17,10 +17,7 @@
 
         <div class="span12 container">
 
-
-
-            <div class="row-fluid">
-              
+            <div class="row-fluid">              
                         <?php
                         if (is_array($user) && count($user)) {
                             foreach ($user as $loop) {
@@ -32,12 +29,9 @@
         $weight = $loop->weight;
         $contact = $loop->contact;
         $sum = $information.' NUMBER-PLATE:'.$numberplate.' CHASIS:'.$chasis.' FUEL:'.$fuel.' ENGINE SIZE:'.$engine.' WEIGHT:'.$weight.' CONTACT:'.$contact;
-        
-                                
-                                ?>  
-
-                                
-                                        <img src="https://chart.googleapis.com/chart?chs=300x400&cht=qr&chl='<?=$sum?>'&choe=UTF-8"  title="QR code" />
+                                        
+        ?>                                 
+                                        <img src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl='<?=$sum?>'&choe=UTF-8"  title="QR code" />
                                    
 
                             <?php }
